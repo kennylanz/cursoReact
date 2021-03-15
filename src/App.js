@@ -1,6 +1,17 @@
 import logo from './logo.svg';
 import './App.css';
 
+
+function  Navbar() {
+  return <> 
+          <h2>Música electrónica</h2>
+          <CartWidget />
+          </>;
+}
+</NavBar> 
+
+function ItemListContainer() {
+}
 function App() {
   return (
     <div className="App">
