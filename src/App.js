@@ -8,8 +8,6 @@ function  Navbar() {
           <CartWidget />
           </>;
 }
-</NavBar> 
-
 function ItemListContainer() {
 }
 function App() {
