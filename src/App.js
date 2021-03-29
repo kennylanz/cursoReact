@@ -1,14 +1,15 @@
-import logo from './logo.svg';
+import React from 'react'
 import './App.css';
-import { NavBar } from './components/NavBar';
-
+import { NavBar } from './components/NavBar'
+import { ItemListContainer } from './components/ItemListContainer'
 
 function App() {
-  return (
-    <div className="App"> 
-    <NavBar />
-    <h2>Listo</h2> 
-    </div>
+  return (<> 
+          <NavBar />
+          <h2>Listo</h2>
+          <ItemListContainer greeting="Lo más nuevo de la música electrónica" />
+          </> 
+
     
 
   );

@@ -1,14 +1,18 @@
 import React from 'react'
+import {CartWidget} from './CartWidget'
 
 export const NavBar = () => {
-    return (
-        <div>
+    return <> 
           <h3>La tienda</h3>
+        <nav>
           <ul>
             <li><a href="">Vídeos</a></li>
             <li><a href="">Solo Audio</a></li>
             <li><a href="">Fotos</a></li>
           </ul>
-        </div>
-    )
+        </nav>
+        <CartWidget />
+        </>;  
 }
+
+export default NavBar
