@@ -3,7 +3,7 @@ import {CartWidget} from './CartWidget'
 
 export const NavBar = () => {
     return <> 
-          <h3>La tienda</h3>
+          <h1>Melodic Space</h1>
         <nav>
           <ul>
             <li><a href="">Vídeos</a></li>

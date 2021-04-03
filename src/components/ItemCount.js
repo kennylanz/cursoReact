@@ -1,17 +1,27 @@
-import React from 'react'
-import { useState } from 'react'
+import React,  { useState } from 'react'
 
 export function ItemCount( { stock, initial, onAdd}) {
-    const [count, setCount] = useState(0);   
+    const [count, setCount] = useState(initial);
+    
+    const increment = () => {
+        if (count >= stock){
+            return
+        }
+        setCount(count+1);
+    }
+
+    const decrement = () => {
+        return setCount(count - 1);
+    }
     
     const addHandler = () => {
         onAdd(count)
     }
         
         return <div>
-            <button disabled={ count <= 0} onClick={() => setCount(count-1)}>-</button>
+            <button disabled={ count <= 0} onClick={decrement}>-</button>
             <div>{count}</div>
-            <button onClick={() => setCount(count+1)}>+</button>
+            <button onClick={increment}>+</button>
             <button disabled={ count > stock} onClick={addHandler}>agregar</button>
         </div>
 
