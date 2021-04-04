@@ -1,12 +1,14 @@
 import React from 'react'
-import {item} from './Item'
+import {Item} from './Item'
 
 
             
 export const ItemList = ({items}) => {
 
     return <>
-            {items.map( elemento => <Item item={elemento} /> )} {
+            {items.map( elemento => 
+            
+            <Item item={elemento} /> )} {
 
             }
             </>
